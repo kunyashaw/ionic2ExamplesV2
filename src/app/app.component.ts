@@ -34,7 +34,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
-  rootPage = Demo20ToolbarPage;
+  rootPage = Demo01ActionsheetPage;
   pages: Array<{ title: string, component: any }>;
 
   constructor(
@@ -47,9 +47,27 @@ export class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Hello Ionic', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage }
+      { title: 'actionSheet', component: Demo01ActionsheetPage },
+      { title: 'Demo02AlertPage', component: Demo02AlertPage },
+      { title: 'Demo03ButtonPage', component: Demo03ButtonPage },
+      { title: 'Demo04CardPage', component: Demo04CardPage },
+      { title: 'Demo05FormPage', component: Demo05FormPage },
+      { title: 'Demo06FabPage', component: Demo06FabPage },
+      { title: 'Demo07GesturePage', component: Demo07GesturePage },
+      { title: 'Demo08GridPage', component: Demo08GridPage },
+      { title: 'Demo09IconPage', component: Demo09IconPage },
+      { title: 'Demo10InputsPage', component: Demo10InputsPage },
+      { title: 'Demo11ListPage', component: Demo11ListPage },
+      { title: 'Demo12LoadingPage', component: Demo12LoadingPage },
+      { title: 'Demo13MenusPage', component: Demo13MenusPage },
+      { title: 'Demo14ModalsPage', component: Demo14ModalsPage },
+      { title: 'Demo16SegmentPage', component: Demo16SegmentPage },
+      { title: 'Demo17SlidesPage', component: Demo17SlidesPage },
+      { title: 'Demo18TabsPage', component: Demo18TabsPage },
+      { title: 'Demo19ToastPage', component: Demo19ToastPage },
+      { title: 'Demo20ToolbarPage', component: Demo20ToolbarPage },
     ];
+    this.menu.open('myMenuLeft');
   }
 
   initializeApp() {
