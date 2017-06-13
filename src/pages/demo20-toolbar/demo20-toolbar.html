@@ -1,0 +1,76 @@
+<!--
+  Generated template for the Demo20ToolbarPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<!--ionic2工具栏（Toolbar组件）是一个通用的条形状态栏，
+你可以把它用于标题栏、副标题栏、页脚，甚至是副页脚。
+由于ion-toolbar是基于弹性盒布局的，所以不管页面中有多少个工具栏，
+样式都会保持正确，而ion-content也会自动调整。
+注意：和ionic2工具栏组件不同，ionic2导航组件通常只能用在ion-header中。-->
+<ion-header>
+
+  <!--<ion-navbar>
+    <ion-title>demo20_toolbar</ion-title>
+  </ion-navbar>-->
+  <ion-toolbar color="danger">
+    <ion-title>Toolbar</ion-title>
+  </ion-toolbar>
+
+  <!--带按钮的工具栏
+我们可以将按钮（Buttons）添加到工具栏中。
+首先在ion-toolbar中添加ion-buttons组件，
+然后在ion-buttons中添加一个或多个button组件。
+我们可以使用start或end属性来控制按钮的位置。-->
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button icon-only color="royal">
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Send To...</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal">
+        <ion-icon name="person-add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <!--带节点按钮的工具栏
+节点按钮组件（Segment）可以让用户在多组视图之间进行切换-->
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button icon-only>
+        <ion-icon name="create"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-segment>
+      <ion-segment-button value="new">
+        New
+      </ion-segment-button>
+      <ion-segment-button value="hot">
+        Hot
+      </ion-segment-button>
+    </ion-segment>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+
+
+  <!--带搜索组件的工具栏
+在工具栏中使用搜索组件（Searchbar）是很常见的做法。-->
+  <ion-toolbar color="primary">
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+</ion-content>

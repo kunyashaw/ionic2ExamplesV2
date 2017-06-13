@@ -1,0 +1,96 @@
+<!--
+  Generated template for the Demo10InputsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>demo10_inputs</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <!--
+  ionic2的输入框可以添加多种属性来适应不同的使用场景，我们列出了几种常用的输入框用法：
+固定行内标签输入框
+浮动标签输入框
+行内标签输入框
+内嵌输入框
+带placeholder的输入框
+堆叠标签输入框
+-->
+  <h1>固定行内标签</h1>
+  <!--固定行内标签-->
+  <ion-item>
+    <ion-label fixed>Username</ion-label>
+    <ion-input type="text" value=""></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+  <h1>浮动标签输入框 </h1>
+  <!--浮动标签输入框 -->
+  <!--这种输入框的特点是当input被选中后，label标签会自动向上浮动。-->
+  <ion-item>
+    <ion-label floating>Username</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+  <h1>行内标签输入框</h1>
+  <!--行内标签输入框-->
+  <!--如果<ion-label>不添加如何属性，那么默认就生成了行内标签输入框-->
+  <ion-item>
+    <ion-label>Username</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+  <h1>内嵌输入框</h1>
+  <!--内嵌输入框-->
+  <!--默认情况下，ionic2的输入框相对父容器的宽度为100%，
+  如果想实现内嵌输入框的效果，请给父容器添加inset属性-->
+  <ion-list inset>
+
+    <ion-item>
+      <ion-label>Username</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <!--堆叠标签输入框-->
+  <h1>堆叠标签输入框</h1>
+  <ion-list>
+
+    <ion-item>
+      <ion-label stacked>Username</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

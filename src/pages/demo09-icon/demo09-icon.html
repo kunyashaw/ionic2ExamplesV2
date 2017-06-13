@@ -1,0 +1,32 @@
+<!--
+  Generated template for the Demo09IconPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>demo09_icon</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <!--所有图标都有两种状态：激活状态和普通状态，
+  激活状态的图标通常是被填充或粗线条的，普通状态的图标通常都是细线条的。
+  我们可以通过isActive属性（
+  true为激活态，false为普通态）来设置图标的激活状态。
+  ionic2中的图标默认是激活的-->
+  <!-- active -->
+  <br/>
+  <ion-icon name="heart"></ion-icon>
+  <!-- inactive -->
+  <br/>
+  <ion-icon name="heart" isActive="false"></ion-icon>
+  <br/>
+  <!--ionic2中的大多数图标都有两个版本：材料设计版（Material Design）和ios版。ionic会根据运行的平台自动选择图标版本。
+我们也可以指定<ion-icon>在特定平台上显示特定图标。通过设置md和ios属性来生成平台化图标。-->
+  <ion-icon ios="logo-apple" md="logo-android"></ion-icon>
+</ion-content>

@@ -1,0 +1,81 @@
+<!--
+  Generated template for the Demo03ButtonPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>demo03_button</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <!--基本样式的按钮-->
+  <button ion-button color="light">Light</button>
+  <button ion-button>Default</button>
+  <button ion-button color="secondary">Secondary</button>
+  <button ion-button color="danger">Danger</button>
+  <button ion-button color="dark">Dark</button>
+  <!--线条边框的按钮-->
+  <button ion-button color="light" outline>Light Outline</button>
+  <button ion-button outline>Primary Outline</button>
+  <button ion-button color="secondary" outline>Secondary Outline</button>
+  <button ion-button color="danger" outline>Danger Outline</button>
+  <button ion-button color="dark" outline>Dark Outline</button>
+  <!--无边框按钮-->
+  <button ion-button color="light" clear>Light Clear</button>
+  <button ion-button clear>Primary Clear</button>
+  <button ion-button color="secondary" clear>Secondary Clear</button>
+  <button ion-button color="danger" clear>Danger Clear</button>
+  <button ion-button color="dark" clear>Dark Clear</button>
+  <!--圆角-->
+  <!--创建一个圆角按钮只需要添加round属性即可。-->
+  <button ion-button color="light" round>Light Round</button>
+  <button ion-button round>Primary Round</button>
+  <button ion-button color="secondary" round>Secondary Round</button>
+  <button ion-button color="danger" round>Danger Round</button>
+  <button ion-button color="dark" round>Dark Round</button>
+  <!--如果再button标签中加入block属性，这个按钮的宽度会占满父容器（含边距），同时拥有了折行属性。-->
+  <button ion-button block>Block Button</button>
+  <!--无边距的按钮块
+按钮属性full的表现基本和block一致，只不过该属性会去掉按钮的边距，看上去是完全占满父容器-->
+  <button ion-button full>Full Button</button>
+  <!--大小-->
+  <button ion-button small>Small</button>
+  <button ion-button>Default</button>
+  <button ion-button large>Large</button>
+  <!--带图标的按钮
+带图标的按钮可以提升用户体验，-->
+  <!-- Float the icon left -->
+  <button ion-button icon-left>
+  <ion-icon name="home"></ion-icon>
+  Left Icon
+</button>
+
+  <!-- Float the icon right -->
+  <button ion-button icon-right>
+  Right Icon  <ion-icon name="home"></ion-icon>
+</button>
+
+  <!-- Only icon (no text) -->
+  <button ion-button icon-only>
+  <ion-icon name="home"></ion-icon>
+</button>
+  <!--被嵌套的按钮
+ionic 2中的组件可以结合使用，button按钮也可以用在其他组件中-->
+
+  <ion-list>
+    <ion-item>
+      Left Icon Button
+      <button ion-button outline item-right icon-left>
+      <ion-icon name="star"></ion-icon>
+      Left Icon    
+    </button>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

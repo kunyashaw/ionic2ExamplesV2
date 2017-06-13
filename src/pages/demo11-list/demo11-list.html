@@ -1,0 +1,127 @@
+<!--
+  Generated template for the Demo11ListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>demo11_list</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h1>基本列表</h1>
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+    {{ item }}  
+  </button>
+  </ion-list>
+  <!--如果给<ion-list>加上no-lines属性就能隐藏分割线-->
+
+  <h1>内嵌列表</h1>
+  <!--ionic2的列表组件默认是没有外边距的，
+  如果想要添加一个边距，
+  我们可以给<ion-list>加上inset属性-->
+  <ion-list inset>
+    <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+    {{ item }}  
+  </button>
+  </ion-list>
+
+  <h1>列表组</h1>
+  <!--如果要给列表分组，请用<ion-item-group>替代<ion-list>。
+    我们可以使用<ion-item-divider>组件来给每个分组添加一个头部信息-->
+  <ion-item-group>
+    <ion-item-divider color="light">A</ion-item-divider>
+    <ion-item>Angola</ion-item>
+    <ion-item>Argentina</ion-item>
+  </ion-item-group>
+
+  <h1>带头部列表</h1>
+  <ion-list>
+    <ion-list-header>
+      Action </ion-list-header>
+    <ion-item>Terminator II</ion-item>
+    <ion-item>The Empire Strikes Back</ion-item>
+    <ion-item>Blade Runner</ion-item>
+  </ion-list>
+
+  <h1>图标列表</h1>
+  <!--在列表中使用图标可以让用户更直观的了解每一行的内容。
+  每个图标都可以设置item-left或item-right属性来让其居左或居右。
+  列表中的图标默认是small属性，如果想要更大的图标可以给其添加large属性。-->
+  <ion-list>
+    <ion-item>
+      <ion-icon name="leaf" item-left></ion-icon>
+      Herbology
+      <ion-icon name="rose" item-right></ion-icon>
+    </ion-item>
+  </ion-list>
+
+  <h1>头像列表</h1>
+  <!--头像列表和图标列表表现相似
+  ，唯一不同的是头像的尺寸要比图标大一点，比缩略图小一点。
+  在列表组件中使用<ion-avatar>就能显示头像了。
+    <ion-avatar>接受item-left或item-right属性。-->
+  <ion-list>
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="assets/img/touxiang.png">
+      </ion-avatar>
+      <h2>Cher</h2>
+      <p>Ugh. As if.</p>
+    </ion-item>
+  </ion-list>
+
+
+  <h1>滑动列表</h1>
+  <!--列表项左滑可以显示一些额外功能，这种列表称为滑动列表。
+  <ion-item-sliding>标签包裹<ion-item>元素，
+    并且在其最后追加<ion-item-options>，就能实现滑动列表。-->
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-left>
+          <img src="assets/img/touxiang.png">
+        </ion-avatar>
+        <h2>Slimer</h2>
+      </ion-item>
+      <ion-item-options side="left">
+        <button ion-button color="primary">
+        <ion-icon name="text"></ion-icon>
+        Text      
+      </button>
+        <button ion-button color="secondary">
+        <ion-icon name="call"></ion-icon>
+        Call      
+      </button>
+      </ion-item-options>
+      <ion-item-options side="right">
+        <button ion-button color="primary">
+        <ion-icon name="mail"></ion-icon>
+        Email      
+      </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+
+  <h1>缩略图列表</h1>
+  <!--缩略图列表和头像列表表现相似，只不过拥有更大的矩形图片。
+  要在列表中添加缩略图请使用<ion-thumbnail>组件，
+    我们可以在上面添加item-left或item-right属性。-->
+  <ion-list>
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="assets/img/touxiang.png">
+      </ion-thumbnail>
+      <h2>My Neighbor Totoro</h2>
+      <p>Hayao Miyazaki • 1988</p>
+      <button ion-button clear item-right>View</button>
+    </ion-item>
+  </ion-list>
+</ion-content>
