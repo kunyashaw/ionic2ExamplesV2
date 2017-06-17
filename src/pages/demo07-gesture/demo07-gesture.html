@@ -20,6 +20,13 @@
   <!--
 ionic2可以通过HTML来绑定手势事件。
 常见的手势事件有：tap、press、pan、swipe、rotate和pinch
+1、注意 pan 和 swipe 的区别 。   平移 与 滑动
+    1、pan 是当我 按住 dom 左右滑动不松手。pan 累加
+    2、而 swipe 是我 按住 dom 左右滑动松手之后 swipe 累加
+ 
+2、注意 tab 与  press 的区别 。 点击 与 按住
+    1、tab  是 轻击 dom 触发方法
+    2、press 则是按住 dom 500毫秒之后触发方法 如果这个时候你轻点一下dom 他将不会触发这个方法。
 -->
   <ion-card (tap)="tapEvent($event)">
     <ion-item>
@@ -28,6 +35,7 @@ ionic2可以通过HTML来绑定手势事件。
   </ion-card>
 
   <div (swipe)="swipeEvent($event)">
+    <h2>{{swipeNum}}</h2>
     <p>
       ionic2可以通过HTML来绑定手势事件。 常见的手势事件有：tap、press、pan、swipe、rotate和pinch
     </p>

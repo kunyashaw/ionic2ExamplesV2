@@ -25,8 +25,10 @@ export class Demo07GesturePage {
     this.tap++;
   }
 
+  swipeNum: number = 0;
   swipeEvent(event) {
     console.log(event);
+    this.swipeNum++;
   }
 
 }

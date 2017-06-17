@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { HttpModule } from '@angular/http';
 import { MyApp } from './app.component';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
@@ -30,6 +31,10 @@ import { Demo17SlidesPage } from '../pages/demo17-slides/demo17-slides'
 import { Demo18TabsPage } from '../pages/demo18-tabs/demo18-tabs'
 import { Demo19ToastPage } from '../pages/demo19-toast/demo19-toast'
 import { Demo20ToolbarPage } from '../pages/demo20-toolbar/demo20-toolbar'
+import { Demo21InfinitePage } from '../pages/demo21-infinite/demo21-infinite'
+import { Demo22RefresherPage } from '../pages/demo22-refresher/demo22-refresher'
+import { Demo23LifecyclePage } from '../pages/demo23-lifecycle/demo23-lifecycle'
+import { TestLifeCycleComponent } from '../pages/demo23-lifecycle/test-lifecycle'
 @NgModule({
   declarations: [
     MyApp,
@@ -55,10 +60,15 @@ import { Demo20ToolbarPage } from '../pages/demo20-toolbar/demo20-toolbar'
     Demo17SlidesPage,
     Demo18TabsPage,
     Demo19ToastPage,
-    Demo20ToolbarPage
+    Demo20ToolbarPage,
+    Demo21InfinitePage,
+    Demo22RefresherPage,
+    Demo23LifecyclePage,
+    TestLifeCycleComponent
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
@@ -86,7 +96,11 @@ import { Demo20ToolbarPage } from '../pages/demo20-toolbar/demo20-toolbar'
     Demo17SlidesPage,
     Demo18TabsPage,
     Demo19ToastPage,
-    Demo20ToolbarPage
+    Demo20ToolbarPage,
+    Demo21InfinitePage,
+    Demo22RefresherPage,
+    Demo23LifecyclePage,
+    TestLifeCycleComponent
   ],
   providers: [
     StatusBar,

@@ -27,6 +27,10 @@ import { Demo17SlidesPage } from '../pages/demo17-slides/demo17-slides'
 import { Demo18TabsPage } from '../pages/demo18-tabs/demo18-tabs'
 import { Demo19ToastPage } from '../pages/demo19-toast/demo19-toast'
 import { Demo20ToolbarPage } from '../pages/demo20-toolbar/demo20-toolbar'
+import { Demo21InfinitePage } from '../pages/demo21-infinite/demo21-infinite'
+import { Demo22RefresherPage } from '../pages/demo22-refresher/demo22-refresher'
+import { Demo23LifecyclePage } from '../pages/demo23-lifecycle/demo23-lifecycle'
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -34,7 +38,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
-  rootPage = Demo01ActionsheetPage;
+  rootPage = Demo23LifecyclePage;
   pages: Array<{ title: string, component: any }>;
 
   constructor(
@@ -47,6 +51,8 @@ export class MyApp {
 
     // set our app's pages
     this.pages = [
+      { title: 'Hello', component: HelloIonicPage },
+      { title: 'myList', component: ListPage },
       { title: 'actionSheet', component: Demo01ActionsheetPage },
       { title: 'Demo02AlertPage', component: Demo02AlertPage },
       { title: 'Demo03ButtonPage', component: Demo03ButtonPage },
