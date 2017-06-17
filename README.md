@@ -7,11 +7,13 @@ $ sudo npm install -g ionic cordova
 $ ionic g page demo01-page
 启动预览模式
 $ ionic serve -l
-```
+
 ### Components
 
 ###`[demo01-actionSheet]` 上拉菜单
+
 ###`[demo02-alert]` 警告、确认、输入提示窗口
+
 ###`[demo03-button] `按钮
 ###`[demo04-card]` 卡片
 ###`[demo05-form]` 表单
@@ -34,6 +36,6 @@ $ ionic serve -l
 ###`[demo22-refresh] `下拉刷新
 ###`[demo23-lifecycle] `生命周期和页面导航
 
-
+```
 
 
