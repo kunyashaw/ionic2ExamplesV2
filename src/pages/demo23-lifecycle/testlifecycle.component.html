@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content padding>
-  <button ion-button navPop>clickMe</button>
-  <button ion-button (click)="back()">back</button>
-  <button ion-button (click)="backToRoot()">backToHome</button>
+  <button ion-button navPop>back:navPop</button>
+  <button ion-button (click)="back()">back:this.navCtrl.pop()</button>
+  <button ion-button (click)="backToRoot()">backToHome:this.navCtrl.popToRoot</button>
 </ion-content>

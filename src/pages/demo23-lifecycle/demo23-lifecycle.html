@@ -7,6 +7,9 @@
 <ion-header>
 
   <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>demo23-lifecycle</ion-title>
   </ion-navbar>
 
@@ -14,6 +17,7 @@
 
 
 <ion-content padding>
-  <button ion-button (click)="goToTest({name:'zhangsan'})">go</button>
-  <button ion-button [navPush]='testPage'>goToTest</button>
+  <button ion-button (click)="goToTest({name:'zhangsan'})">g</button>
+
+  <button ion-button [navPush]='testPage'>goToTes</button>
 </ion-content>

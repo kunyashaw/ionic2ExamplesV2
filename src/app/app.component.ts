@@ -38,7 +38,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
-  rootPage = Demo23LifecyclePage;
+  rootPage = HelloIonicPage;
   pages: Array<{ title: string, component: any }>;
 
   constructor(
@@ -72,6 +72,9 @@ export class MyApp {
       { title: 'Demo18TabsPage', component: Demo18TabsPage },
       { title: 'Demo19ToastPage', component: Demo19ToastPage },
       { title: 'Demo20ToolbarPage', component: Demo20ToolbarPage },
+      { title: 'Demo21InfinitePage', component: Demo21InfinitePage },
+      { title: 'Demo22RefresherPage', component: Demo22RefresherPage },
+      { title: 'Demo23LifeCycle', component: Demo23LifecyclePage }
     ];
     this.menu.open('myMenuLeft');
   }

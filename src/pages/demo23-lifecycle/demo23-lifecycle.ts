@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AlertController, IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ToastController, AlertController, IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TestLifeCycleComponent } from './test-lifecycle'
 
 /**
@@ -16,7 +16,7 @@ import { TestLifeCycleComponent } from './test-lifecycle'
 export class Demo23LifecyclePage {
   testPage: any;
 
-  constructor(public alertCtrl: AlertController, public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public toastCtr: ToastController, public alertCtrl: AlertController, public navCtrl: NavController, public navParams: NavParams) {
     this.testPage = TestLifeCycleComponent;
   }
 
@@ -25,8 +25,20 @@ export class Demo23LifecyclePage {
   }
 
   goToTest(params) {
-    this.navCtrl
+    var promise = this.navCtrl
       .push(TestLifeCycleComponent, params);
+    promise
+      .then((data) => {
+        console.log('jump promoise: resolve result', data);
+        if (!data) {
+          this.alertCtrl.create({ message: 'AccessDenied' }).present();
+        }
+        else {
+          //  duration: 3000,position: 'middle',//top middle bottom(default)
+          this.toastCtr.create({ message: 'Success', duration: 500, position: 'middle' }).present();
+        }
+      })
+
     /* var promise = this.navCtrl
        .push(TestLifeCycleComponent, { fail: result });
      if (result) {
